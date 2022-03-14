@@ -113,7 +113,20 @@ def answer(message):
                          parse_mode='Тыкай сюда!', disable_web_page_preview=True)
         return start(message)
     elif message.text.lower() == "аниме":
-        bot.send_message(message.chat.id, 'Властелин Колец: Братство Кольца')
+        bot.send_message(message.chat.id, 'Атака Титанов\n<https://yandex.ru/search/?clid=2358536&text'
+                                          '=атака+титанов+смотреть+онлайн&l10n=ru&lr=10719>\n\nДоктор '
+                                          'Стоун\n<https://yandex.ru/search/?clid=2358536&text'
+                                          '=доктор+стоун+смотреть+онлайн&l10n=ru&lr=10719>\n\nМагическая '
+                                          'битва\n<https://yandex.ru/search/?clid=2358536&text'
+                                          '=магическая+битва+смотреть+онлайн&l10n=ru&lr=10719>\n\nВанпанчмен\n<https'
+                                          '://yandex.ru/search/?clid=2358536&text=ванпанчмен+смотреть+онлайн&l10n=ru'
+                                          '&lr=10719>\n\nКлинок, рассекающий '
+                                          'демонов\n<https://yandex.ru/search/?text'
+                                          '=клинок+рассекающий+демонов+смотреть+онлайн&lr=10719&clid=2358536>\n\nМоя '
+                                          'геройская академия\n<https://yandex.ru/search/?clid=2358536&text'
+                                          '=моя+геройская+академия+смотреть+онлайн&l10n=ru&lr=10719>', disable_web_page_preview=True)
+        bot.send_message(message.chat.id, '[inline URL](https://www.kinopoisk.ru/lists/movies/genre--anime/?sort=votes&b=high_rated&b=series)',
+                         parse_mode='Тыкай сюда!', disable_web_page_preview=True)
         return start(message)
     elif message.text.lower() == "стратегия":
         bot.send_message(message.chat.id, 'Властелин Колец: Братство Кольца')
